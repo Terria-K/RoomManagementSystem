@@ -33,7 +33,6 @@ public partial class RoomControl : UserControl
         InitializeComponent();
 
         Load += OnLoad;
-        Click += OnClicked;
     }
 
     private void OnClicked(object? sender, EventArgs e)
@@ -74,6 +73,8 @@ public partial class RoomControl : UserControl
 
             MouseHover += OnMouseHover;
             MouseLeave += OnMouseLeave;
+
+            Click += OnClicked;
             return;
         }
 
