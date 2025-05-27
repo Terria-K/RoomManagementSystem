@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="AccountVerificationPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Components\RoomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ReservationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ReservationFormPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ReservationFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ReservationRequestPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SignUpPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UC_Floor1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UC_Floor2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UC_Floor3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UC_Floor4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UC_Floor5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
