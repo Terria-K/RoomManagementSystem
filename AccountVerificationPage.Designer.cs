@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountVerificationPage));
             tbluserAccountVerificationBindingSource = new BindingSource(components);
             btn_Approve = new Button();
             btn_Reject = new Button();
@@ -48,7 +49,7 @@
             btn_Approve.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btn_Approve.Location = new Point(21, 9);
             btn_Approve.Name = "btn_Approve";
-            btn_Approve.Size = new Size(149, 32);
+            btn_Approve.Size = new Size(140, 30);
             btn_Approve.TabIndex = 1;
             btn_Approve.Text = "Approve";
             btn_Approve.UseVisualStyleBackColor = true;
@@ -57,9 +58,9 @@
             // btn_Reject
             // 
             btn_Reject.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            btn_Reject.Location = new Point(200, 9);
+            btn_Reject.Location = new Point(191, 9);
             btn_Reject.Name = "btn_Reject";
-            btn_Reject.Size = new Size(149, 32);
+            btn_Reject.Size = new Size(140, 30);
             btn_Reject.TabIndex = 2;
             btn_Reject.Text = "Reject";
             btn_Reject.UseVisualStyleBackColor = true;
@@ -74,21 +75,24 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.Controls.Add(btn_Approve, 0, 0);
             tableLayoutPanel1.Controls.Add(btn_Reject, 2, 0);
-            tableLayoutPanel1.Location = new Point(274, 417);
+            tableLayoutPanel1.Location = new Point(283, 423);
+            tableLayoutPanel1.Margin = new Padding(0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.Padding = new Padding(18, 6, 18, 6);
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(370, 50);
+            tableLayoutPanel1.Size = new Size(352, 48);
             tableLayoutPanel1.TabIndex = 3;
             // 
             // unverifiedUserGrid
             // 
             unverifiedUserGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            unverifiedUserGrid.BackgroundColor = Color.FromArgb(241, 241, 251);
             unverifiedUserGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             unverifiedUserGrid.Location = new Point(12, 12);
             unverifiedUserGrid.Name = "unverifiedUserGrid";
             unverifiedUserGrid.ReadOnly = true;
+            unverifiedUserGrid.RowHeadersWidth = 51;
             unverifiedUserGrid.Size = new Size(895, 408);
             unverifiedUserGrid.TabIndex = 4;
             // 
@@ -96,14 +100,15 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(48, 56, 67);
-            ClientSize = new Size(919, 471);
+            ClientSize = new Size(919, 475);
             Controls.Add(unverifiedUserGrid);
             Controls.Add(tableLayoutPanel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "AccountVerificationPage";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "AccountVerificationPage";
+            Text = "Account Verification Page";
             Load += AccountVerificationPage_Load;
             ((System.ComponentModel.ISupportInitialize)tbluserAccountVerificationBindingSource).EndInit();
             tableLayoutPanel1.ResumeLayout(false);

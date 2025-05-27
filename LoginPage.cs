@@ -1,4 +1,8 @@
-﻿namespace RoomManagementSystem;
+﻿using System.Data;
+using Microsoft.Data.SqlClient;
+
+
+namespace RoomManagementSystem;
 
 public partial class LoginPage : Form
 {
@@ -74,5 +78,15 @@ public partial class LoginPage : Form
         }
 
         Database.ChangeIP(ip);
+    }
+
+    private void LoginPage_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    private void ipBox_TextChanged(object sender, EventArgs e)
+    {
+
     }
 }

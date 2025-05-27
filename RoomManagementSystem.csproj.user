@@ -22,9 +22,6 @@
     <Compile Update="ReservationFormView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ReservationRequestPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="SignUpPage.cs">
       <SubType>Form</SubType>
     </Compile>
