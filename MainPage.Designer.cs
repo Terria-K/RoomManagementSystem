@@ -94,6 +94,7 @@
             btn_Reserve = new Button();
             pnl_roomInfo = new Panel();
             btnLogOut = new Button();
+            button1 = new Button();
             pnl_roomQuickView.SuspendLayout();
             tblLayout_roomAvailability.SuspendLayout();
             pnl_roomCount7.SuspendLayout();
@@ -412,7 +413,6 @@
             pnl_roomName3.Padding = new Padding(21, 0, 0, 0);
             pnl_roomName3.Size = new Size(193, 46);
             pnl_roomName3.TabIndex = 4;
-            pnl_roomName3.Paint += panel1_Paint;
             // 
             // lbl_roomKitchen
             // 
@@ -493,7 +493,6 @@
             lbl_countLecRoom.Size = new Size(55, 19);
             lbl_countLecRoom.TabIndex = 1;
             lbl_countLecRoom.Text = "15 / 15";
-            lbl_countLecRoom.Click += label1_Click;
             // 
             // pnl_roomName1
             // 
@@ -518,7 +517,6 @@
             lbl_roomLecture.TabIndex = 0;
             lbl_roomLecture.Text = "Lecture Rooms";
             lbl_roomLecture.TextAlign = ContentAlignment.MiddleLeft;
-            lbl_roomLecture.Click += lbl_roomLecture_Click;
             // 
             // pnl_titleRoomAvailabilityContainer
             // 
@@ -722,7 +720,6 @@
             lbl_roomInfo.TabIndex = 0;
             lbl_roomInfo.Text = "Room Information";
             lbl_roomInfo.TextAlign = ContentAlignment.MiddleCenter;
-            lbl_roomInfo.Click += lbl_roomInfo_Click;
             // 
             // tableLayoutPanel1
             // 
@@ -967,6 +964,7 @@
             // 
             pnl_roomInfo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             pnl_roomInfo.BackColor = Color.FromArgb(241, 241, 251);
+            pnl_roomInfo.Controls.Add(button1);
             pnl_roomInfo.Controls.Add(btnLogOut);
             pnl_roomInfo.Controls.Add(tblLayout_roomActions);
             pnl_roomInfo.Controls.Add(tableLayoutPanel1);
@@ -988,6 +986,18 @@
             btnLogOut.Text = "Log Out";
             btnLogOut.UseVisualStyleBackColor = true;
             btnLogOut.Click += OnLogout;
+            // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(124, 658);
+            button1.Name = "button1";
+            button1.Size = new Size(84, 34);
+            button1.TabIndex = 21;
+            button1.Text = "Refresh";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += OnRefresh;
             // 
             // MainPage
             // 
@@ -1122,6 +1132,7 @@
         private Label label1;
         private Label timeOutText;
         private Button btnLogOut;
+        private Button button1;
     }
 }
 

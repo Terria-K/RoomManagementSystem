@@ -6,7 +6,7 @@ namespace RoomManagementSystem;
 
 internal static class Database
 {
-    private static string connectionString = "Data Source=localhost;Initial Catalog=RoomDirectoryManagementSystem;User ID=teuria;Password=admin;Encrypt=False";
+    private static string connectionString = "Server=localhost;Database=RoomDirectoryManagementSystem;User ID=teuria;Password=admin;Encrypt=False";
 
     public static void Init()
     {
@@ -15,7 +15,7 @@ internal static class Database
 
     public static void ChangeIP(string ipAddress)
     {
-        connectionString = $"Data Source={ipAddress};Initial Catalog=RoomDirectoryManagementSystem;User ID=teuria;Password=admin;Encrypt=False";
+        connectionString = $"Server={ipAddress};Database=RoomDirectoryManagementSystem;User ID=teuria;Password=admin;Encrypt=False";
     }
 
     public static bool AddUser(int inputID, string inputPassword, string inputLName, string inputFName, string inputMName, string inputUserType)

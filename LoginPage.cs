@@ -1,8 +1,4 @@
-﻿using System.Data;
-using Microsoft.Data.SqlClient;
-
-
-namespace RoomManagementSystem;
+﻿namespace RoomManagementSystem;
 
 public partial class LoginPage : Form
 {

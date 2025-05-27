@@ -160,6 +160,7 @@ namespace RoomManagementSystem
             }
 
             OnView(requestForm);
+            EventBus.InvokeAcceptReservationForm();
         }
     }
 }

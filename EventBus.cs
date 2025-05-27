@@ -11,4 +11,12 @@ internal static class EventBus
     {
         RoomClicked?.Invoke(room);
     }
+
+    public delegate void AcceptReservationForm();
+    public static event AcceptReservationForm? AcceptedReservationForm;
+
+    internal static void InvokeAcceptReservationForm()
+    {
+        AcceptedReservationForm?.Invoke();
+    }
 }
